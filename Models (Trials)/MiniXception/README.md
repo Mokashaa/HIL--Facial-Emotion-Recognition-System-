@@ -11,5 +11,5 @@
 - Epochs Weights folder contains the weights of the whole model and the weights of each epoch.
 - Demo file is for running and trying the model.
 
--Retrained the model on FER2013 for 100 epochs
--Reached training accuracy 77% and validation accuracy of 74.3% with 4 main classess (Angry-Happy-Sad-Neutral)
+- Retrained the model on FER2013 for 100 epochs
+- Reached training accuracy 77% and validation accuracy of 74.3% with 4 main classess (Angry-Happy-Sad-Neutral)
