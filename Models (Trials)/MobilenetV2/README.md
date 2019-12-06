@@ -15,7 +15,7 @@ saved model: <https://drive.google.com/open?id=1gIxuyKIveS-8xkJXtlO3D48fTRlF1rY1
 
 * Acheived test accuracy of 77.47% after 8 epochs of training.
 
-* Small model size with around 2.5 million parameters.
+* Medium model size with around 4.5 million parameters.
 
 * Further training (more than 8 epochs) would improve performance.
 
