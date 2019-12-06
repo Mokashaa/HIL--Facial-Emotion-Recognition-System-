@@ -13,7 +13,7 @@ saved model: <https://drive.google.com/open?id=1gIxuyKIveS-8xkJXtlO3D48fTRlF1rY1
 
 * The model was pre-trained on ImageNet dataset.
 
-* Acheived test accuracy of 75% after 8 epochs of training.
+* Acheived test accuracy of 77.47% after 8 epochs of training.
 
 * Small model size with around 2.5 million parameters.
 
