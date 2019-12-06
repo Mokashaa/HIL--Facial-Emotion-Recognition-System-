@@ -32,6 +32,7 @@ data_generator = ImageDataGenerator(rescale = 1./255.,
                                    shear_range = 0.2,
                                    zoom_range = 0.2,
                                    horizontal_flip = True)
+test_data_generator = ImageDataGenerator(rescale = 1./255.)
 
 train_data_gen = data_generator.flow_from_directory(batch_size=BATCH_SIZE,
                                                directory=train_dir,
@@ -41,7 +42,7 @@ valid_data_gen = data_generator.flow_from_directory(batch_size=BATCH_SIZE,
                                                directory=valid_dir,
                                                shuffle=True,
                                                target_size=(IMG_HEIGHT, IMG_WIDTH))
-test_data_gen = data_generator.flow_from_directory(batch_size=BATCH_SIZE,
+test_data_gen = test_data_generator.flow_from_directory(batch_size=BATCH_SIZE,
                                                directory=test_dir,
                                                shuffle=True,
                                                target_size=(IMG_HEIGHT, IMG_WIDTH))
@@ -73,7 +74,7 @@ model.summary()
 num_train = 28026
 num_test = 3497
 num_valid = 3497
-initial_epochs = 2
+initial_epochs = 8
 steps_per_epoch = round(num_train)//BATCH_SIZE
 validation_steps = round(num_valid)//BATCH_SIZE
 
