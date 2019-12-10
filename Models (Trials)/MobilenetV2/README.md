@@ -3,21 +3,27 @@
 
 ## The following architectures were implemented and tested
 
-### **1. MobilenetV2 as in** <https://arxiv.org/pdf/1801.04381.pdf>
+### **1. MobilenetV2 as in** <https://arxiv.org/pdf/1801.04381.pdf> with 3 variations in the FC layers
 
-python notebook: <https://colab.research.google.com/drive/1XSM0jSrHe3YxKqO-vvHY1xu324auD95V>
+python notebook: <https://colab.research.google.com/drive/16hXQ-2gIisd2gZSPOG-GWgsvr1cGW_yP>
 
-saved model: <https://drive.google.com/open?id=1gIxuyKIveS-8xkJXtlO3D48fTRlF1rY1>
+saved models:
+
+* mobilenetv2 no FC layers: <https://drive.google.com/open?id=10JVv-SCo3eV5pBXNAGrt4AI_iQI45sDk>
+
+* mobilenetv2 one FC layer (1024 units): <https://drive.google.com/open?id=1o8hnemo8IFJ_C0KDEk3iiz8WJPXvsz24>
+
+* mobilenetv2 one FC layer (2048 units): <https://drive.google.com/open?id=1gIxuyKIveS-8xkJXtlO3D48fTRlF1rY1>
+
+evaluation notebook: <https://colab.research.google.com/drive/1b9bjDeYqNDqhfQslrMNhItqBWphtq-8x>
 
 #### Feedback and notes
 
 * The model was pre-trained on ImageNet dataset.
 
-* Acheived test accuracy of 77.47% after 8 epochs of training.
+* Acheived test accuracies of 79.35%, 79.87%, 77.47% for mobilenetv2 without fc layer, with 1024 units fc layer and with 2048 units fc layer respectively.
 
-* Medium model size with around 4.5 million parameters.
-
-* Further training (more than 8 epochs) would improve performance.
+* Small model sizes with around 3 million parameters.
 
 ### **2. MobilenetV2 variant (mobilenetv2 small) as in** <https://arxiv.org/pdf/1902.05411.pdf>
 
