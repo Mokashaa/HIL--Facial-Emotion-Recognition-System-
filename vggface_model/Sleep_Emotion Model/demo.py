@@ -33,7 +33,7 @@ while True:
         if sleep == "drowsy" and sleep == sleep_prev:
             count = count+1
             sleep_prev = sleep
-            if count > 15:
+            if count > 10:
                 cv2.rectangle(frame, (x + w + 20, y + 40), (x + w + 120, y + 55), (28, 13, 191), 13)
                 cv2.putText(frame, "ALERT!!", (x + w + 32, y + 54), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 255, 255), 1,
                             cv2.LINE_AA)
