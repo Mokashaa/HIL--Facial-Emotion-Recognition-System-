@@ -1,4 +1,4 @@
-# MiniXception Model
+# ResNet50 Model
 
 ### This model was run by: 
 - Mohamed Okasha
