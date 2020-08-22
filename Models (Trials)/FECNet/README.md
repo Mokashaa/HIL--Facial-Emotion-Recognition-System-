@@ -10,7 +10,7 @@
 
 ## FECNet Implementation
 
-For implementing FECNet a pre-trained FaceNet-NN2 model is required. I didn't find any public weights for the architecture so I worked with a variation of FaceNet, which is the Inception-Resnet-V1 architecture. I used weights provided by [2]. I will refer to the variation I developed as FEC-IRNet.
+For implementing FECNet a pre-trained FaceNet-NN2 model is required. I didn't find any public weights for the architecture so I worked with a variation of FaceNet, which is the Inception-Resnet-V1 architecture. I used weights provided in [2]. I will refer to the variation I developed as FEC-IRNet.
 
 ## FECNet For Facial Expressions Recognition
 
@@ -33,5 +33,5 @@ FER2013 is dataset with a wide variety of facial expressions. It is one of the w
 
 ## References
 
-[1]  
-[2]
+[1] Raviteja Vemulapalli and A. Agarwala, "A Compact Embedding for Facial Expression Similarity", CVPR 2019.
+[2] https://github.com/nyoki-mtl/keras-facenet.
