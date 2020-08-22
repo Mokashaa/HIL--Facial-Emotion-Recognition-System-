@@ -33,5 +33,5 @@ FER2013 is dataset with a wide variety of facial expressions. It is one of the w
 
 ## References
 
-[1] Raviteja Vemulapalli and A. Agarwala, "A Compact Embedding for Facial Expression Similarity", CVPR 2019.
+[1] Raviteja Vemulapalli and A. Agarwala, "A Compact Embedding for Facial Expression Similarity", CVPR 2019.  
 [2] https://github.com/nyoki-mtl/keras-facenet.
