@@ -30,3 +30,8 @@ FER2013 is dataset with a wide variety of facial expressions. It is one of the w
 4. I removed the outliers using z-score; filter out if |z-score| >= 3.
 
 5. I trained an emotions classifier on the filtered dataset.
+
+## References
+
+[1]  
+[2]
