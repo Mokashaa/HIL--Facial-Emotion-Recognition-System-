@@ -15,7 +15,8 @@ For implementing FECNet a pre-trained FaceNet-NN2 model is required. I didn't fi
 ## FECNet For Facial Expressions Recognition
 
 After training FEC-IRNet, I used it as a base model in two classification models: An emotions classifier and a sleep classifier. I trained the emotions classifier on FER2013, and the sleep classifier on CEW.  
-After training the two models I combined them in a unified model that detects emotions and drowsiness(sleep).
+After training the two models I combined them in a unified model that detects emotions and drowsiness(sleep).  
+saved model (Tensorflow 2.3): https://drive.google.com/file/d/1SMd_8myIWrkuSd_KscyrcYMJJ258jSyI/view?usp=sharing
 
 ## FECNet For Outliers Removal
 
