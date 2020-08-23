@@ -5,7 +5,7 @@ from keras.models import load_model
 emotion_dict = {0: "angry", 1: "happy", 2: "neutral", 3: "sad"}
 sleep_dict = {0: "alert", 1: "drowsy"}
 
-model = load_model("sleep_emotion_model.hdf5")
+model = load_model(".\\vggface_model\\Sleep_Emotion Model\\whole_model.hdf5")
 
 cap = cv2.VideoCapture(0)
 i = 0
@@ -18,7 +18,7 @@ while True:
     ret, frame = cap.read()
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
-    face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+    face_cascade = cv2.CascadeClassifier('\\Face_Detection_Models\\Haar_Cascade_Classifier\\haarcascade_frontalface_default.xml')
     faces = face_cascade.detectMultiScale(frame, 1.3, 5)
 
     for (x, y, w, h) in faces:
