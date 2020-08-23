@@ -13,13 +13,11 @@ from utils.camera import add_camera_args, Camera
 from utils.display import open_window, set_display, show_fps
 from utils.mtcnn import TrtMtcnn
 from keras.models import load_model
-#from tensorflow.keras.models import load_model
 import numpy as np
 
 emotion_dict = {0: 'angry', 1: 'happy', 2: 'neutral', 3: 'sad'}
 sleep_dict = {0: "awake", 1: "drowsy"}
 
-#model = load_model("./FEC_Emotion_Sleep.h5")
 model = load_model("./whole_model.hdf5")
 WINDOW_NAME = 'TrtMtcnnDemo'
 BBOX_COLOR = (0, 255, 0)  # green
@@ -49,7 +47,6 @@ def show_faces(img, boxes, landmarks):
         #################################
         roi_color = img1[y1:y2, x1:x2, :]
         cropped_img = np.expand_dims(cv2.resize(roi_color, (224, 224)), 0)
-        #cropped_img = np.expand_dims(cv2.resize(roi_color, (160, 160)), 0)
         prediction2 = model.predict(cropped_img)
         sleep = prediction2[0]
         emotion = prediction2[1]
